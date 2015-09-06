@@ -1,0 +1,42 @@
+{
+  "name": "grunt-dist",
+  "description": "Bulk generate `js`,` min.js` and `min.map`.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jaywcjlove/grunt-dist",
+  "author": {
+    "name": "jaywcjlove",
+    "email": "398188662@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/JSLite/JSLite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaywcjlove/grunt-dist/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin",
+    "size",
+    "uglify",
+    "compress"
+  ],
+  "dependencies": {
+    "shelljs": "^0.5.3",
+    "uglify-js": "^2.4.24"
+  }
+}
