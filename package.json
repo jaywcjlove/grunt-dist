@@ -33,7 +33,10 @@
     "gruntplugin",
     "size",
     "uglify",
-    "compress"
+    "compress",
+    "grunt",
+    "dist"
+    "grunt-dist"
   ],
   "dependencies": {
     "shelljs": "^0.5.3",
