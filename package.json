@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.oschina.net/JSLite/JSLite.git"
+    "url": "https://github.com/jaywcjlove/grunt-dist"
   },
   "bugs": {
     "url": "https://github.com/jaywcjlove/grunt-dist/issues"
