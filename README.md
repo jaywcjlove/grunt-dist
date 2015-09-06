@@ -2,7 +2,7 @@
 
 > Bulk generate `js`,` min.js` and `min.map`.
 
-
+![screenshot](screenshot.png)
 
 
 ## Getting Started
