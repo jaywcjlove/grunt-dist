@@ -35,7 +35,7 @@ function build(tofile,path){
     // 生成dist
     mkdir('-p', tofile);
 
-    root = process.cwd();
+    root = process.cwd()+'/';
     //在dist中生成原生文件
     dist = cat(path).replace(/\n{3,}/g, "\n\n");
     dist.to(tofile + '/' + url);
