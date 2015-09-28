@@ -16,7 +16,7 @@ var root = __dirname + '/'
 require('shelljs/make');
 
 //路径切换到项目根目录
-root = exec('pwd').output.replace(/\s+$/,'/')
+// root = exec('pwd').output.replace(/\s+$/,'/')
 
 //压缩
 function compress(file,file_nim,file_gz){
@@ -35,6 +35,7 @@ function build(tofile,path){
     // 生成dist
     mkdir('-p', tofile);
 
+    root = process.cwd();
     //在dist中生成原生文件
     dist = cat(path).replace(/\n{3,}/g, "\n\n");
     dist.to(tofile + '/' + url);
@@ -45,8 +46,7 @@ function build(tofile,path){
     //在dist中生成 map 和 min 文件
     var result = UglifyJS.minify([root+tofile + '/' + url],{
         outSourceMap: fileext('map',path),
-        sourceRoot: "http://jslite.io",
-        mangle:true
+        sourceRoot:'http://jslite.io'
     });
 
     result.code.to(tofile + '/' + fileext('min',path));
