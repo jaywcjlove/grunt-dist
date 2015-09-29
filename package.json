@@ -1,7 +1,7 @@
 {
   "name": "grunt-dist",
   "description": "Bulk generate `js`,` min.js` and `min.map`.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://github.com/jaywcjlove/grunt-dist",
   "author": {
     "name": "jaywcjlove",
